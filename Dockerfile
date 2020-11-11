@@ -1,5 +1,8 @@
 FROM php:7.4-fpm
 
+# Install extensions mysql
+RUN docker-php-ext-install mysqli
+
 # Install extensions ldap
 RUN \
     apt-get update && \
