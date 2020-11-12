@@ -1,7 +1,7 @@
 FROM php:7.4-fpm
 
 # Install extensions mysql
-RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install mysqli exif imagick zip gd
 
 # Install extensions ldap
 RUN \
