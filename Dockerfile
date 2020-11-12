@@ -1,6 +1,6 @@
 FROM php:7.4-fpm
 
-RUN apt-get update && apt-get install libldap2-dev libzip-dev imagemagick -y
+RUN apt-get update && apt-get install libldap2-dev libzip-dev libmagickwand-dev -y
 
 # Install extensions mysql
 RUN docker-php-ext-install mysqli
