@@ -1,6 +1,6 @@
 FROM php:7.4-fpm
 
-RUN apt-get update && apt-get install libldap2-dev libzip -y
+RUN apt-get update && apt-get install libldap2-dev zip -y
 
 # Install extensions mysql
 RUN docker-php-ext-install mysqli
